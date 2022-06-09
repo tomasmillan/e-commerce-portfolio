@@ -1,0 +1,118 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8rem;
+  line-height: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+  }
+  .menu li {
+    padding: 0 15px;
+  }
+  .menu li a {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .menu li a:hover {
+    border-bottom: 2px solid #8ea06b;
+  }
+  
+  .open-menu, .close-menu, .log-icon {
+    display: none;
+  }
+  
+  .logo {
+    color: #333333;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 1rem;
+  }
+  
+  .log .btn, .log .fa {
+    color: #bcb8b1;
+    padding: 10px 10px;
+  }
+  
+  @media (max-width: 700px) {
+    .navbar {
+      padding: 1rem;
+    }
+  
+    .nav-img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .log .btn, .log .fa {
+      display: none;
+    }
+  
+    .menu {
+      flex-direction: column;
+      justify-content: space-evenly;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      font-size: 1.4rem;
+      background-color: #0069CC;
+      overflow: auto;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s;
+    }
+    .menu a {
+      border-bottom: 2px solid #bcb8b1;
+    }
+  
+    .open-menu, .close-menu, .log-icon {
+      display: block;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .close-menu {
+      align-self: flex-end;
+      padding: 0 50px;
+    }
+  
+    .menu_opened {
+      opacity: 1;
+      pointer-events: all;
+    }
+  
+    .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible),
+  .log-icon:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+  @media (max-width: 1100px) {
+    .nav-img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .log .btn, .log .fa {
+      display: none;
+    }
+  
+    .log-icon {
+      display: block;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }

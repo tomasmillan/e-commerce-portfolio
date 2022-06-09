@@ -27,10 +27,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 1.2rem;
+    padding: 1.4rem 0.5rem;
     z-index: 1;
     
 }
+
 .main{
     grid-area: main;
     background: radial-gradient(#fff, rgb(218, 160, 176));
@@ -79,7 +80,7 @@
     text-transform: uppercase;
     cursor: pointer;
 }
-nav ul li{
+/* nav ul li{
     display: inline;
     list-style-type: none;
     padding: 0 0.6rem;
@@ -89,15 +90,13 @@ nav ul li{
     text-transform: uppercase;
     font-size: 1.1rem;
     color: rgb(128, 128, 128);
-}
+} */
 .icons img{
     width: 2rem;
     height: 2rem;
     margin: 0 0.8rem;
 }
-.hamburger{
-    visibility: hidden;    
-}
+
 .col-1{
     display: flex;
     justify-content: center;
@@ -336,7 +335,7 @@ padding: 8rem;
     .container{
         height: 100vh;
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 80%;
         grid-template-rows: auto auto auto auto auto auto auto 1fr 1fr 0.3rem;
         grid-template-areas: 
         'header'
@@ -384,7 +383,6 @@ padding: 8rem;
     .main{
         display: flex;
         flex-direction: column;
-        
         justify-content: center;
     }
     .col-2 img{
@@ -398,20 +396,8 @@ padding: 8rem;
         position: relative;
         left: 40%;
     }
-    .hamburger{
-        visibility: visible;
-    }
-    .trust{
-        display: flex;
-        justify-content: center;
-    }
-    .menu{
-        overflow: hidden;
-        background-color: #333;
-        position: relative;
-    }
-   .menu nav ul li{
-        overflow: hidden;;
+    
+   
     }
 
 
@@ -420,10 +406,10 @@ padding: 8rem;
 
 
 
-
-
-}
 @media screen and (max-width: 900px) {
+    body{
+        width: 80%;
+    }
     .container{
         height: 100vh;
         display: grid;
@@ -464,12 +450,7 @@ padding: 8rem;
         display: flex;
         justify-content: center;
     }
-    .menu ul li{
-        width: 75%;
-        display: inline;
-
-    }
-    .icons{
+       .icons{
         display: inline-flex;
     }
 }

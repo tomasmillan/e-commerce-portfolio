@@ -5,33 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salud Sin recetas</title>
-    <link rel="stylesheet" href="style.css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css/style.css" type="text/css">
+    <link rel="stylesheet" href="style.css/menu.css" type="text/css">
     <script src="https://kit.fontawesome.com/e1cd5ca43b.js" crossorigin="anonymous"></script></head>
+    
   
 </head>
 <body>
   <div class="container">
-      <div class="header">
-          <div class="logo">
-              <h2>Salud sin recetas!</h2>
-          </div>
-          <div class="menu">
-              <nav>
-                  <ul>
-                      <li><a href="index.html">inicio</a></li>
-                      <li><a href="products.html">productos</a></li>
-                      <li><a href="plans.html">planes</a></li>
-                      <li><a href="about.html">sobre mi</a></li>
-                      <li><a href="contact.html">contacto</a></li>
-                  </ul>
-              </nav>
-          </div>
-          <div class="icons">
-              <img src="img/menu.png" class="hamburger">
+           <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <h2>Salud sin recetas!</h2>
+            </a>
+            <button class="open-menu">
+                <img src="img/menu-pngrepo-com.png"  class="nav-img">
+            </button>
+            <ul class="menu">
+                <button class="close-menu"><img src="img/close-pngrepo-com.png"  class="nav-img"></button>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="products.html">productos</a></li>
+                <li><a href="plans.html">planes</a></li>
+                <li><a href="about.html">sobre mi</a></li>
+                <li><a href="contact.html">contacto</a></li>
+            </ul>
+            <div class="icons">
               <a href="cart.html"><img src="img/cart.png" alt=""></a>
           </div>
-      </div>
+        </nav>
+    </header>
+
       <div class="main">
           <div class="col-1">
               <div class="call-action">
@@ -213,5 +217,6 @@
             </div>
         </div>
   </div>
+  <script src="menu.js"></script>
 </body>
 </html>
