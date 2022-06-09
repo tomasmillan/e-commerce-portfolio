@@ -8,30 +8,34 @@
     <link rel="stylesheet" href="style.css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e1cd5ca43b.js" crossorigin="anonymous"></script></head>
-  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
   <div class="container">
-      <div class="header">
-          <div class="logo">
+    <header class="header">
+      <nav class="navbar">
+          <a href="index.html" class="logo">
               <h2>Salud sin recetas!</h2>
-          </div>
-          <div class="menu">
-              <nav>
-                  <ul>
-                      <li><a href="index.html">inicio</a></li>
-                      <li><a href="products.html">productos</a></li>
-                      <li><a href="plans.html">planes</a></li>
-                      <li><a href="about.html">sobre mi</a></li>
-                      <li><a href="contact.html">contacto</a></li>
-                  </ul>
-              </nav>
-          </div>
+          </a>
+          <button class="open-menu">
+              <img src="img/menu-pngrepo-com.png"  class="nav-img">
+          </button>
+          <ul class="menu">
+              <button class="close-menu"><img src="img/close-pngrepo-com.png"  class="nav-img"></button>
+              <li><a href="index.html">inicio</a></li>
+              <li><a href="products.html">productos</a></li>
+              <li><a href="plans.html">planes</a></li>
+              <li><a href="about.html">sobre mi</a></li>
+              <li><a href="contact.html">contacto</a></li>
+          </ul>
           <div class="icons">
-              <img src="img/menu.png" class="hamburger">
-              <a href="cart.html"><img src="img/cart.png" alt=""></a>
-          </div>
-      </div>
+            <a href="cart.html"><img src="img/cart.png" alt=""></a>
+        </div>
+      </nav>
+  </header>
       <div class="main">
           <div class="col-1">
               <div class="call-action">
